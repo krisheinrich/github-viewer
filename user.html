@@ -4,7 +4,7 @@
     <a href="#/main">Back to Search</a>
   </nav>
   
-  <img ng-src="{{user.avatar_url}}" title="{{user.name}}" class="user-img"/>
+  <a href="{{user.html_url}}"><img ng-src="{{user.avatar_url}}" title="{{user.name}}" class="user-img"/></a>
   <div class="user-data">
     <p>Public GitHub repositories for</p>
     <h2>{{user.name}} ({{user.login}})</h2>

@@ -15,7 +15,7 @@
     Contributers:
     <ul id="repo-users">
       <li ng-repeat="user in repo.contributors">
-        <img src="{{user.avatar_url}}" alt="{user.login}}">
+	<a href="#/user/{{user.login}}"><img src="{{user.avatar_url}}" alt="{user.login}}"></a>
         <br />{{user.login}}
       </li>
     </ul>
