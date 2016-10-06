@@ -1,9 +1,9 @@
 // Code goes here
 
 (function() {
-
-  var app = angular.module("githubExplorer");
-
+  
+  var app = angular.module("githubViewer");
+  
   var MainCtrl = function($scope, $location) {
 
 
@@ -11,13 +11,13 @@
     $scope.search = function(username) {
       $location.path("/user/" + username);
     };
-
+  
     // Initialize model data
-    $scope.username = "angular";
-
-  };
-
-
+    $scope.username = "";
+    
+  }; 
+  
+  
   app.controller("MainCtrl", MainCtrl);
-
+  
 })();

@@ -1,5 +1,80 @@
 /* Styles go here */
 
-img {
+
+.full-width, table {
+  width: 100%;
+}
+
+.header {
+  margin: 0 auto 2.2em auto;
+  text-align: center;
+  padding: 1.8em 0 1em 0;
+  font-family: Merriweather, Montserrat, sans-serif;
+  background: rgba(204,204,204,1);
+  background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(173,173,173,1)));
+  background: -webkit-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
+  background: -o-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
+  background: -ms-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
+  background: linear-gradient(to bottom, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#adadad', GradientType=0 );
+  box-shadow: 0 3px 4px #ddd;
+  
+}
+
+.header h1 {
+  color: #696969;
+  text-shadow: 1px 1px 4px rgba(150,150,150,0.5);
+}
+
+.header p {
+  color: #777;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav {
+  margin-bottom: 1.5em;
+}
+
+.user-img {
+  float: left;
   height: 160px;
+  margin: 20px;
+}
+
+.user-data {
+  padding: 20px;
+}
+
+.user-data > p {
+  margin: 0;
+}
+
+
+#sort-order-picker {
+  margin-top: 1.2em;
+}
+
+#repo-users li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+#repo-users img {
+  height: 120px;
+  margin: 20px;
+}
+
+#footnote {
+  margin-top: 4em;
+  font-size: 13px;
+  text-align: center;
+}
+
+#footnote a {
+  color: #829292;
 }

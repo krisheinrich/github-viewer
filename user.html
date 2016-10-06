@@ -1,24 +1,31 @@
-<div ng-show="user">
+<div ng-show="user" class="full-width">
   
-  <a href="#/main">Back to Search</a>
+  <nav class="clearfix">
+    <a href="#/main">Back to Search</a>
+  </nav>
   
-  <h2>{{user.name}}</h2>
-  {{ error }}
-  <div>{{user.location}}</div>
-  <img ng-src="{{user.avatar_url}}" title="{{user.name}}"/>
-  <div id="sort-order-picker">
-    Order:
-    <select ng-model="repoSortOrder">
-      <option value="+name">Name</option>
-      <option value="-stargazers_count">Stars</option>
-      <option value="+language">Language</option>
-    </select>
+  <img ng-src="{{user.avatar_url}}" title="{{user.name}}" class="user-img"/>
+  <div class="user-data">
+    <p>Public GitHub repositories for</p>
+    <h2>{{user.name}} ({{user.login}})</h2>
+    {{ error }}
+    <div>{{user.company}}</div>
+    <div>{{user.location}}</div>
+    <div id="sort-order-picker">
+      Order By: 
+      <select ng-model="repoSortOrder">
+        <option value="+name">Name</option>
+        <option value="-stargazers_count">Stars</option>
+        <option value="+language">Language</option>
+      </select>
+    </div>
   </div>
   
-  <table>
+  
+  <table class="clearfix">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Repository Name</th>
         <th>Stars</th>
         <th>Language</th>
       </tr>

@@ -1,6 +1,8 @@
   <div>
-    <form name="searchUser" ng-submit="search(username)">
-      <input type="search" required="" placeholder="GitHub username" ng-model="username" />
-      <input type="submit" value="Search" />
+    <form name="searchUser" ng-submit="search(username)" class="input-group">
+      <input type="search" required="" class="form-control" placeholder="GitHub username (e.g. angular, addyosmani, etc.)" ng-model="username" />
+      <span class="input-group-btn">
+        <input type="submit" value="Search" class="btn btn-secondary" />
+      </span>
     </form>
   </div>

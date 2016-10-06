@@ -1,19 +1,26 @@
-<div ng-show="repo">
-
-  <a href="#/main">Back to Search</a>
-  <a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
-
+<div ng-show="repo" class="full-width">
+  
+  <nav class="clearfix">
+    <a href="#/main">Back to Search</a> | 
+    <a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
+  </nav>
+  
   <h2>{{repo.name}}</h2>
+  <div>GitHub URL: <a href="repo.html_url">{{repo.html_url}}</a></div>
+  <div>Times Forked: {{repo.forks_count}}</div>
   <div>Open issues: {{repo.open_issues_count}}</div>
   {{ error }}
-
+  
   <div>
-    <ul>
+    Contributers:
+    <ul id="repo-users">
       <li ng-repeat="user in repo.contributors">
         <img src="{{user.avatar_url}}" alt="{user.login}}">
-        {{user.login}}
+        <br />{{user.login}}
       </li>
     </ul>
   </div>
+  
+  
 
 </div>
