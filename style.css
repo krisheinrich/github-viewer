@@ -8,6 +8,7 @@
 .header {
   text-align: center;
   padding: 1.8em 0 0.5em 0;
+  margin-bottom: 1.6em;
   background: rgba(204,204,204,1);
   background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(173,173,173,1)));
