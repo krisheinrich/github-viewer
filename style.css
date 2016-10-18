@@ -6,10 +6,8 @@
 }
 
 .header {
-  margin: 0 auto 2.2em auto;
   text-align: center;
-  padding: 1.8em 0 1em 0;
-  font-family: Merriweather, Montserrat, sans-serif;
+  padding: 1.8em 0 0.5em 0;
   background: rgba(204,204,204,1);
   background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(173,173,173,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(173,173,173,1)));
@@ -22,7 +20,21 @@
   
 }
 
+.header .container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header img {
+  width: 56px;
+  margin: 0 10px 10px 10px;
+}
+
 .header h1 {
+  display: inline-block;
+  font-family: Monaco, Trebuchet, sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
   color: #696969;
   text-shadow: 1px 1px 4px rgba(150,150,150,0.5);
 }
